@@ -1,0 +1,55 @@
+; Layan cursors
+; Right click on the file "install.inf" and select "Install". Then apply Capitaine cursors in Control Panel > Appearance and Personalization > Personalization > Change mouse pointers.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Installed files
+
+[Scheme.Cur]
+watch.ani
+progress.ani
+default.cur
+help.cur
+pointer.cur
+size_all.cur
+size_bdiag.cur
+Install.inf
+size_ver.cur
+size_hor.cur
+size_fdiag.cur
+pencil.cur
+crosshair.cur
+text.cur
+not-allowed.cur
+up-arrow.cur
+
+[Strings]
+CUR_DIR       = "Cursors\Layan Cursors"
+SCHEME_NAME   = "Layan Cursors"
+pointer       = "default.cur"
+help          = "help.cur"
+work          = "progress.ani"
+busy          = "watch.ani"
+text          = "text.cur"
+unavailiable  = "not-allowed.cur"
+vert          = "size_ver.cur"
+horz          = "size_hor.cur"
+dgn1          = "size_fdiag.cur"
+dgn2          = "size_bdiag.cur"
+move          = "size_all.cur"
+link          = "pointer.cur"
+cross         = "crosshair.cur"
+hand          = "pencil.cur"
+alternate     = "up-arrow.cur"
